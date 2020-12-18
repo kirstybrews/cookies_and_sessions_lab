@@ -1,0 +1,8 @@
+<h1>This is the Homepage</h1>
+<hr/>
+
+<%= form_tag :url => '/', method: "post" do %>
+    <%= label_tag :product %>
+    <%= text_field_tag :product, session[:cart] %>
+    <%= submit_tag "add to cart" %>
+<% end %>
